@@ -13,21 +13,16 @@ const faqImageOrigAtl = faqImage.getAttribute("alt");
 const h2s = document.querySelectorAll("#faqs h2");
 
 
+console.log(h2s);
+
 
 const toggleVisibility = evt => {
     const userSelect = evt.currentTarget;
-    console.log(userSelect.id)
-
-    let allClosed = false; // don't know if i need this
-
-    for (h2 in h2s){
-        if (h2 === userSelect) { // this logic is wonk
-            // invert the state of the element
-            // update the image and alt text to the correct 
-        }
-
-
-    }
+    const div = userSelect.nextElementSibling;
+    userSelect.classList.toggle("minus");  // this toggles the state of the h2 tag
+    div.classList.toggle("open"); // this toggles the state of the div tag
+    faqImage.setAttribute("src", userSelect.getAttribute("src"));
+    evt.preventDefault();
 }
 
 document.addEventListener("DOMContentLoaded", () =>{

@@ -10,8 +10,20 @@
 const faqImage = document.getElementById("faq_image");
 const faqImageOrigSrc = faqImage.getAttribute(src);
 const faqImageOrigAtl = faqImage.getAttribute(alt);
-const h2s = document.getElementsByTagName("h2");
+const h2s = document.querySelectorAll("#faqs h2");
 
 
+
+const toggleVisibility = evt => {
+
+}
+
+document.addEventListener("DOMContentLoaded", () =>{
+
+    for (let h2 of h2s){
+        h2.addEventListener("click", toggleVisibility);
+    }
+
+});
 
 

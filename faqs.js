@@ -17,7 +17,10 @@ const h2s = document.querySelectorAll("#faqs h2");
 
 console.log(h2s);
 
-
+/**
+ *  toggles the visibility of the h2 and div elements by taking in the h2 that the user clicked on
+ * @param {*} evt 
+ */
 const toggleVisibility = evt => {
     var allClosed = false
     const userSelect = evt.currentTarget;
@@ -43,7 +46,9 @@ const toggleVisibility = evt => {
     }
     evt.preventDefault();
 }
-
+/**
+ * adds the event listeners to the h2 elements so they call the toggle visibility when clicked on 
+ */
 document.addEventListener("DOMContentLoaded", () =>{
 
     for (let h2 of h2s){

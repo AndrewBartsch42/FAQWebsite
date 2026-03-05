@@ -1,5 +1,7 @@
 "use strict";
-
+// Author: Andrew Bartsch
+// Github: https://github.com/AndrewBartsch42/FAQWebsite
+// Program Name: FAQWebsite
 /*
  * Global Variables
  * faqImage: main faq image element 

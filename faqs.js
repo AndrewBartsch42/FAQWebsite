@@ -17,11 +17,28 @@ console.log(h2s);
 
 
 const toggleVisibility = evt => {
+    var allClosed = false
     const userSelect = evt.currentTarget;
     const div = userSelect.nextElementSibling;
-    userSelect.classList.toggle("minus");  // this toggles the state of the h2 tag
-    div.classList.toggle("open"); // this toggles the state of the div tag
-    faqImage.setAttribute("src", userSelect.getAttribute("src"));
+    for (let h2 of h2s){
+        if (h2 == userSelect){
+            if (h2.className == "minus"){
+                allClosed = true;
+            }
+            h2.classList.toggle("minus");
+            div.classList.toggle("open");
+            faqImage.setAttribute("src", h2.getAttribute("src"));
+            faqImage.setAttribute("alt", h2.getAttribute("alt"));
+        }
+        else {
+            h2.classList.remove("minus");
+            h2.nextElementSibling.classList.remove("open");
+        }
+    }
+    if(allClosed){
+        faqImage.setAttribute("src", faqImageOrigSrc);
+        faqImage.setAttribute("alt", faqImageOrigAtl);
+    }
     evt.preventDefault();
 }
 

@@ -15,8 +15,6 @@ const faqImageOrigAtl = faqImage.getAttribute("alt");
 const h2s = document.querySelectorAll("#faqs h2");
 
 
-console.log(h2s);
-
 /**
  *  toggles the visibility of the h2 and div elements by taking in the h2 that the user clicked on
  * @param {*} evt 

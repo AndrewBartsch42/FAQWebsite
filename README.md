@@ -1,5 +1,10 @@
 # FAQWebsite
 Simple website for faq website for bear sizes questions. The website only allows one drop down to be active at the same time.  
+What was Learned:  
+How to loop through a set of elements    
+How to add event listeners to an element  
+How to toggle css classes onto an element  
+  
 OUTPUT:  
 <img width="641" height="400" alt="image" src="https://github.com/user-attachments/assets/71949b93-3e01-4c7b-8c8e-dd00c32d5902" />  
 <img width="642" height="434" alt="image" src="https://github.com/user-attachments/assets/791e4b1f-a9dd-4a74-bf76-54f9d575c8c2" />  

@@ -1,5 +1,5 @@
 # FAQWebsite
-Simple website for faq website for bear sizes questions. The website only allows one drop down to be active at the same time.  
+Simple website for faq website for bear sizes questions. The website only allows one drop down to be active at the same time with css classes and an event listener that toggles them.    
 What was Learned:  
 How to loop through a set of elements    
 How to add event listeners to an element  
